@@ -1,0 +1,16 @@
+version: '3'
+services:
+  wzp-web:
+    container_name: wzp-web
+    hostname: wzp-web
+    volumes:
+        - ./dist:/web
+    environment:
+     - TZ=Asia/Shanghai
+    image: wzp-web
+    restart: always
+    ports:
+      - 20082:80
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      secure_file_priv:

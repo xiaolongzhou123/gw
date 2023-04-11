@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xx网络科技有限公司</title>
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script type="text/javascript">
+    //javascritp代码
+    $(document).ready(function () {
+      $("#solutionBtn").click(function () {
+        window.location.replace("/solution.html");
+      });
+      $("#contactBtn").click(function () {
+        window.location.replace("/contactus.html");
+      });
+    });
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <!-- header导航 -->
+  <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        xx网络科技有限公司
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./index.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              相关产品
+            </a>
+            <ul class="dropdown-menu text-light">
+              <li><a class="dropdown-item" href="./portal.html">PORTAL认证系统</a></li>
+              <li><a class="dropdown-item" href="./flow.html">网络流量监控平台</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./husky.html">堡垒机</a></li>
+              <li><a class="dropdown-item" href="./openvpn.html">OpenVPN</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn nav-link" id="solutionBtn">解决方案</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn nav-link" id="contactBtn">联系我们</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">PORTAL认证解决方案</h2>
+        </div>
+        <div class="col-12 h-100">
+
+          <div class="card-group ">
+            <div class="card ">
+              <img src="https://picsum.photos/400/150?random=1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-center">员工访客入网管理</h5>
+                <p class="card-text text-muted">支持802.1x认证登陆方式，网页认证</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">google auth二次密钥</li>
+                <li class="list-group-item">手机号登陆</li>
+                <li class="list-group-item">微信登陆</li>
+              </ul>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/400/150?random=2" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-center">Qos限速</h5>
+                <p class="card-text text-muted">QoS是网络的一种安全机制, 是用来解决网络延迟和阻塞等问题的一种技术</p>
+
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">设置用户上行带宽</li>
+                <li class="list-group-item">设置用户下行带宽</li>
+                <li class="list-group-item">设置全局带宽</li>
+              </ul>
+            </div>
+            <div class="card ">
+              <img src="https://picsum.photos/400/150?random=3" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-center">准入控制</h5>
+                <p class="card-text text-muted">自由绑定终端的MAC地址。可实现限制非办公设备加入网络。</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">限制MAC地址</li>
+                <li class="list-group-item">限制接入端（移动、桌面）</li>
+                <li class="list-group-item">限制用户</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
